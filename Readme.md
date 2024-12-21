@@ -8,6 +8,9 @@ Coding Games is a blockchain-based platform that gamifies coding education. Crea
 **Contract Address:**
 0x0B8478f973dB022eD73FB214c44C26dD81fa1BA7
 
+![image](https://github.com/user-attachments/assets/519dd286-dec5-49b3-89ca-169abf9b197f)
+
+
 ## Project Vision
 Our vision is to make coding education more interactive, rewarding, and accessible by combining blockchain technology with gamified learning. By providing an engaging environment for learning, we aim to bridge the gap between beginners and coding mastery.
 
