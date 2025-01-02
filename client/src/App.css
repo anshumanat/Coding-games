@@ -1,0 +1,142 @@
+/* Global reset to ensure consistent styling across browsers */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles for body and app container */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  min-height: 100vh; /* Ensure the body covers full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Logo styling */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* App header container */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+}
+
+/* Link styling */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Keyframe for logo spinning animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Global container to center content vertically and horizontally */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .App-logo {
+    height: 30vmin; /* Adjust logo size for smaller screens */
+  }
+  .App-header {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Additional global styles for form elements and buttons */
+input, button {
+  width: 320px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Styling for buttons */
+button {
+  background: linear-gradient(90deg, #ff8c00, #e52e71);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  font-weight: bold;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #e52e71, #ff8c00);
+}
+
+button:active {
+  background: #e52e71;
+}
+
+/* Layout for common header/footer */
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Additional layout consistency for all pages */
+main {
+  width: 100%;
+  max-width: 1200px; /* Restrict width for large screens */
+  margin: 0 auto;
+}

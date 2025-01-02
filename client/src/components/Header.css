@@ -1,0 +1,65 @@
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Change from sticky to fixed */
+  top: 0;
+  left: 0;
+  right: 0; /* Ensure it spans the full width */
+  z-index: 1000;
+  width: 100%; /* Ensure it spans the full width */
+  height: 60px; /* Set a fixed height for the header */
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Ensuring the content below the header does not get hidden */
+body {
+  padding-top: 60px; /* Add padding equal to the header height to prevent content from being hidden behind the fixed header */
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .nav {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+
+  

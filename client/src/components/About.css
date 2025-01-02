@@ -1,0 +1,51 @@
+/* About.css */
+.about-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h1 {
+    font-size: 48px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #34495e;
+    margin-bottom: 30px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-container .about-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .about-container .cta-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .about-container .cta-button:hover {
+    background-color: #2980b9;
+  }
+  
+  

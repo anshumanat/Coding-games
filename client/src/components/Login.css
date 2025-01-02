@@ -1,0 +1,126 @@
+/* General login container styles */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* Title styling */
+.login-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px; /* Increase bottom margin for more space */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Email input container */
+.login-container .email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
+    margin-bottom: 20px; /* Add more space between email and password */
+}
+
+.login-container .email-container label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.login-container input {
+    width: 340px; /* Same width for both email and password inputs */
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus state */
+.login-container input:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Password input container */
+.login-container .password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px; /* Add more space between password and button */
+}
+
+.login-container .password-container label {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* Button styling */
+.login-container button {
+    width: 280px; /* Same width for button and inputs */
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #ff8c00, #e52e71);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.5s, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover and active states */
+.login-container button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #e52e71, #ff8c00);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-container button:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Fade-in animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
